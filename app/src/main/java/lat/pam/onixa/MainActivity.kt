@@ -39,22 +39,23 @@ class MainActivity : AppCompatActivity() {
             mCount++
             model.currentName.value = mCount
         }
-        buttonToast.setOnClickListener(View.OnClickListener {
+        buttonToast.setOnClickListener {
             val tulisan: String = mShowCount.text.toString()
-            val toast: Toast = Toast.makeText(this, "Angka yang dimunculkan "+tulisan, Toast.LENGTH_LONG)
+            val toast: Toast =
+                Toast.makeText(this, "Angka yang dimunculkan " + tulisan, Toast.LENGTH_LONG)
             toast.show()
-        })
+        }
 
-        buttonSwitchPage.setOnClickListener(View.OnClickListener {
+        buttonSwitchPage.setOnClickListener {
             val intent = Intent(this, MainActivity2::class.java)
             startActivity(intent)
-        })
+        }
 
-        buttonBrowser.setOnClickListener(View.OnClickListener {
+        buttonBrowser.setOnClickListener {
             val intentbrowse = Intent(Intent.ACTION_VIEW)
             intentbrowse.setData(Uri.parse("https://www.google.com/"))
             startActivity(intentbrowse)
-        })
+        }
 
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->

@@ -6,4 +6,5 @@
     <string name="text_header">Halaman ke-2</string>
     <string name="button_label_pindah">Switch Page</string>
     <string name="button_label_browser">Browser Page</string>
+    <string name="reset">Reset</string>
 </resources>

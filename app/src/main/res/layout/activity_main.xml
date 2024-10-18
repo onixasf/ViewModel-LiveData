@@ -30,7 +30,7 @@
     <TextView
         android:id="@+id/show_count"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:textSize="160sp"
         android:background="#FFFFFF"
         android:layout_weight="2"
@@ -48,9 +48,10 @@
         android:id="@+id/button_reset"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Reset"
-        android:layout_toRightOf="@+id/button_count"
-        android:backgroundTint="#F64781"/>
+        android:text="@string/reset"
+        android:layout_toEndOf="@+id/button_count"
+        android:backgroundTint="#F64781"
+        tools:ignore="ObsoleteLayoutParam" />
 
     <Button
         android:id="@+id/button_pindah"

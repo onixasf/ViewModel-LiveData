@@ -27,7 +27,7 @@
         android:text="@string/button_label_toast"
         android:textColor="@color/cardview_light_background"
         android:backgroundTint="#F47EA7"
-        android:layout_toRightOf="@id/button_browser"
+        android:layout_toEndOf="@id/button_browser"
         android:layout_alignTop="@id/button_browser"
         android:layout_marginEnd="8dp"/>
 
@@ -37,7 +37,7 @@
         android:layout_height="wrap_content"
         android:backgroundTint="#E77799"
         android:text="@string/button_label_count"
-        android:layout_toRightOf="@id/button_toast"
+        android:layout_toEndOf="@id/button_toast"
         android:layout_alignTop="@id/button_toast"
         android:layout_marginEnd="8dp"/>
 
@@ -45,8 +45,8 @@
         android:id="@+id/button_reset"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Reset"
-        android:layout_toRightOf="@+id/button_count"
+        android:text="@string/reset"
+        android:layout_toEndOf="@+id/button_count"
         android:backgroundTint="#F64781"
         android:layout_alignTop="@id/button_count"
         android:layout_marginEnd="8dp"/>
@@ -58,7 +58,7 @@
         android:backgroundTint="#EB2164"
         android:text="@string/button_label_pindah"
         app:cornerRadius="20dp"
-        android:layout_toRightOf="@id/button_reset"
+        android:layout_toEndOf="@id/button_reset"
         android:layout_alignTop="@id/button_reset"
         android:layout_marginEnd="8dp"/>
 

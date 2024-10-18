@@ -10,6 +10,7 @@ android {
     defaultConfig {
         applicationId = "lat.pam.onixa"
         minSdk = 24
+        //noinspection OldTargetApi
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -45,5 +46,5 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    implementation ("androidx.activity:activity-ktx:1.9.3")
+    implementation (libs.androidx.activity.ktx)
 }
